@@ -1,37 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function Features() {
-  const data = [
-    {
-      title: "html",
-    },
-    {
-      title: "CSS",
-    },
-    {
-      title: "Bootstrap",
-    },
-    {
-      title: "JavaScript",
-    },
-    {
-      title: "React",
-    },
-    {
-      title: "Django",
-    },
-  ];
+export default function Features({data}) {
 
   let renderItems = () => {
-    return data.map((item) => {
-      console.log(item);
+    return data.map((item) => (
+        console.log(data),
       <div className="cardcontainer">
         <div className="card">
           <h2>{item.title}</h2>
-          <button className="button-33">view more</button>
+          <Link to={`/Single/${item.id}`}>view more</Link>
         </div>
-      </div>;
-    });
+      </div>
+    ));
   };
   return (
     <>
@@ -39,8 +20,7 @@ export default function Features() {
         <div className="box">
           <h4>Features</h4>
         </div>
-        {renderItems()}
-
+        <div className="flex">{renderItems()}</div>
       </div>
     </>
   );

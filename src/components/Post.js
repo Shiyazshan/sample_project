@@ -15,7 +15,7 @@ const Post = () => {
     setState(newstate);
     console.log(newstate);
   };
-  
+
   let submitHandler = (e) => {
     e.preventDefault();
     axios
@@ -30,12 +30,12 @@ const Post = () => {
       });
   };
   let rederItem = () => {
-    return datas.map((item) => <p>{item.body}</p>);
+    return datas.map((item) => <p key={item.userid}>{item.body}</p>);
   };
   return (
     <>
       <div className="container">
-        <form onSubmit={submitHandler}>
+        <form onSubmit={(e)=>submitHandler(e)}>
           <input
             type="number"
             name="userid"
