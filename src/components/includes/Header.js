@@ -35,6 +35,7 @@ export default function Header() {
 }
 
 const HeaderContainer = styled.div`
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,6 +45,8 @@ const HeaderContainer = styled.div`
   box-shadow: -3px 16px 32px -12px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -3px 16px 32px -12px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -3px 16px 32px -12px rgba(0, 0, 0, 0.75);
+  width: 100%;
+  position: fixed;
 `;
 const Left = styled.div`
   width: 30%;
@@ -57,7 +60,5 @@ const Ul = styled.ul`
   justify-content: center;
   align-items: center;
 `;
-// const NavLink = styled(NavLink)`
-//   margin-right: 20px;
-// `;
+
 const Nav = styled.div``;
