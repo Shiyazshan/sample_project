@@ -18,7 +18,7 @@ export default function Features({data}) {
     <>
       <div className="main">
         <div className="box">
-          <h4>Features</h4>
+          <h4>Params</h4>
         </div>
         <div className="flex">{renderItems()}</div>
       </div>

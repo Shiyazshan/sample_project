@@ -5,6 +5,7 @@ import About from '../screens/About';
 import Contact from '../screens/Contact';
 import Features from '../screens/Features';
 import Home from '../screens/Home';
+import Request from '../screens/Request';
 import Single from '../screens/Single';
 
 function Approuter() {
@@ -41,6 +42,7 @@ function Approuter() {
               <Route path="Features" element={<Features data={data} />} />
               <Route path="About" element={<About />} />
               <Route path="Contact" element={<Contact />} />
+              <Route path="Request" element={<Request />} />
               <Route path="Single/:id" element={<Single data={data} />} />
           </Route>
       </Routes>
