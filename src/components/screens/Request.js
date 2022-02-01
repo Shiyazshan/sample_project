@@ -5,7 +5,7 @@ function Request() {
   const [getdata, setGetdata] = useState([]);
   const [postdata, setPostdata] = useState({});
   const [putdata, setPutdata] = useState({});
-  const [deldata, setDeldata] = useState([]);
+  
   const getData = () => {
     axios
       .get("https://jsonplaceholder.typicode.com/posts/")
