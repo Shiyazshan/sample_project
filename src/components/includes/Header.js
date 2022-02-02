@@ -14,16 +14,16 @@ export default function Header() {
             <NavLink className="link" to="/">
               <Nav>Home</Nav>
             </NavLink>
-            <NavLink className="link" to="/About">
+            <NavLink className="link" to="/about">
               <Nav>About</Nav>
             </NavLink>
-            <NavLink className="link" to="/Features">
+            <NavLink className="link" to="/features">
               <Nav>Features</Nav>
             </NavLink>
-            <NavLink className="link" to="/Contact">
+            <NavLink className="link" to="/contact">
               <Nav>Contact</Nav>
             </NavLink>
-            <NavLink className="link" to="/Request">
+            <NavLink className="link" to="/request">
               <Nav>Axios</Nav>
             </NavLink>
           </Ul>

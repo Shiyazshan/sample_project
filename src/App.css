@@ -9,6 +9,28 @@ div {
 h1 {
   font-size: 20px;
 }
+.gt-dt {
+  border-bottom: 1px solid #000;
+}
+.read-flex {
+  border: 1px solid #000;
+}
+.btn-updte {
+  padding: 5px;
+  background: green;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+div.span{
+  margin-bottom: 10px;
+}
+.btn-delete {
+  padding: 5px;
+  background: rgb(128, 0, 0);
+  color: #fff;
+  text-decoration: none;
+}
 div.container form {
   display: flex;
   justify-content: center;
@@ -31,8 +53,6 @@ textarea {
 .main {
   min-height: 100vh;
   position: relative;
-  
-
 }
 
 body {
@@ -43,14 +63,13 @@ body {
     #c850c0 46%,
     #ffcc70 100%
   );
-  background-repeat: no-repeat;
-  
+  /* background-repeat: no-repeat; */
 }
 .box {
   background-color: #d9afd9;
   background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
   padding: 3%;
-  width: 30%;
+  width: 50%;
   margin: 0 auto;
   text-align: center;
   border-radius: 8px;
@@ -60,7 +79,7 @@ body {
   position: absolute;
   top: 200px;
   left: 0;
-  right:0;
+  right: 0;
 }
 
 .btn-grad {
@@ -165,7 +184,6 @@ body {
   position: absolute;
   width: 100%;
   top: 420px;
-
 }
 
 .button-55 {
@@ -178,7 +196,7 @@ body {
   border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
   border-style: solid;
   border-width: 2px;
-  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
   box-sizing: border-box;
   color: #41403e;
   cursor: pointer;
@@ -187,7 +205,7 @@ body {
   font-size: 1rem;
   line-height: 23px;
   outline: none;
-  padding: .75rem;
+  padding: 0.75rem;
   text-decoration: none;
   transition: all 235ms ease-in-out;
   border-bottom-left-radius: 15px 255px;
@@ -203,21 +221,21 @@ body {
 }
 
 .button-55:hover {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
 }
 
 .button-55:focus {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
-.scroll-view{
+.scroll-view {
   max-height: 250px;
   overflow-y: scroll;
 }
-.scroll-view::-webkit-scrollbar{
+.scroll-view::-webkit-scrollbar {
   display: none;
 }
-.btn-container{
-  display:flex;
+.btn-container {
+  display: flex;
   justify-content: space-between;
 }

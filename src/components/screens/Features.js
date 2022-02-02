@@ -9,7 +9,7 @@ export default function Features({data}) {
       <div className="cardcontainer">
         <div className="card">
           <h2>{item.title}</h2>
-          <Link to={`/Single/${item.id}`}>view more</Link>
+          <Link to={`/feature/${item.id}`}>view more</Link>
         </div>
       </div>
     ));

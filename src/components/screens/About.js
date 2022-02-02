@@ -2,10 +2,10 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function About() {
-    const navigate = useNavigate();
-    const onSubmitHandler = () => {
-        navigate ('/Contact');
-    }
+  const navigate = useNavigate();
+  const onSubmitHandler = () => {
+    navigate("/contact");
+  };
   return (
     <>
       <div className="main">
@@ -17,7 +17,9 @@ export default function About() {
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s
             </p>
-            <button className="btn-grad" onClick={onSubmitHandler}>More details</button>
+            <button className="btn-grad" onClick={onSubmitHandler}>
+              More details
+            </button>
           </div>
         </div>
       </div>
