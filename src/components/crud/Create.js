@@ -14,7 +14,10 @@ function Create() {
       })
       .then((response) => {
         console.log(response.data);
+        window.location.reload()
       });
+    
+
   };
   return (
     <form onSubmit={sendDataToApi}>

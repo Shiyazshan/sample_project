@@ -1,12 +1,12 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Update() {
   const [firstname, setFirstName] = useState("");
   const [lastname, setLastName] = useState("");
   const [ID, setID] = useState(null);
-
+    const navigate = useNavigate()
   
   const sendDataToApi = (e) => {
     e.preventDefault();
@@ -16,7 +16,8 @@ function Update() {
         lastname,
       })
       .then(() => {
-        Navigate('/read')
+        // Navigate('/read')
+        navigate('/request')
       });
   };
 

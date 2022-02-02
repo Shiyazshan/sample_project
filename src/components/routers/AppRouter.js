@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Delete from '../crud/Delete';
 import Update from '../crud/Update';
 import Header from '../includes/Header';
 import About from '../screens/About';
@@ -46,7 +45,6 @@ function Approuter() {
               <Route path="contact" element={<Contact />} />
               <Route path="request" element={<Request />} />
               <Route path="update" element={<Update />} />
-              <Route path="delete" element={<Delete />} />
               <Route path="feature/:id" element={<Single data={data} />} />
           </Route>
       </Routes>
