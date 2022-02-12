@@ -7,9 +7,14 @@ function Request() {
   return (
     <div className="main">
       <div className="box">
-        <Create />
-        <Read />
-        {/* <Update /> */}
+        <div className="cmpnt-flx">
+          <div className="cnt-flx">
+            <Create />
+          </div>
+          <div className="cnt-flx">
+            <Read />
+          </div>
+        </div>
       </div>
     </div>
   );

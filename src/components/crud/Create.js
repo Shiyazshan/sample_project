@@ -20,18 +20,19 @@ function Create() {
 
   };
   return (
-    <form onSubmit={sendDataToApi}>
+    <form className="form-crt" onSubmit={sendDataToApi}>
+      <h3>Add data</h3>
       <input
         type="text"
         name="fname"
         onChange={(e) => setFirstName(e.target.value)}
-        placeholder="Enter your firstname"
+        placeholder="Enter your first name"
       />
       <input
         type="text"
         name="lname"
         onChange={(e) => setLastName(e.target.value)}
-        placeholder="Enter your lastname"
+        placeholder="Enter your last name"
       />
       <input type="submit" onClick={sendDataToApi} />
     </form>
